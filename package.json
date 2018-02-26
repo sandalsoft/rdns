@@ -1,14 +1,25 @@
 {
   "name": "rdns",
+  "description": "Simple reverse DNS lookups",
   "version": "0.1.0",
   "main": "index.js",
-  "license": "UNLICENSED",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sandalsoft/rdns/issues"
+  },
+  "homepage": "https://github.com/sandalsoft/rdns/#readme",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:sandalsoft/rdns.git"
+  },
+  "keywords": ["dns", "reverse dns"],
+  "author": "Eric Nelson <eric@sandalsoft.com>",
   "scripts": {
     "test": "jest"
   },
   "dependencies": {
-    "ip": "^1.1.5",
-    "native-dns": "^0.7.0"
+    "ip": "1.1.5",
+    "native-dns": "0.7.0"
   },
   "devDependencies": {
     "eslint": "^4.18.1",
