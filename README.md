@@ -15,19 +15,19 @@ or
 ```
 const rdns = require('rdns');
 
-async main() {
-  
+async function main() {
   try {
     const hostnames = await rdns('8.8.8.8');
-    console.log(hostnames);  // ["google-public-dns-a.google.com"]
-    console.log(hostname[0]); // "google-public-dns-a.google.com"
+    console.log(hostnames); // [ 'google-public-dns-a.google.com ']
+    console.log(hostnames[0]); // google-public-dns-a.google.com
   } catch (error) {
     console.log(`error: ${JSON.stringify(error)}`);
   }
 }
 
 // main() needed so we can call await inside async main() function
-main()
+main();
+
 ```
 
 # Notes
